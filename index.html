@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+<link rel="icon" href="img/icon.png"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Temp-Pressure-Calculator</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+	<link href="style/main.css" rel="stylesheet" type="text/css"/>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav  class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo2.png" width="50" height="50"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Temperature Calculator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Pressure Calculator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Lussac's Gass law</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="w bg-primary text-white">
+      <div class="container text-center">
+        <h1></h1>
+        <p class="lead"></p>
+      </div>
+    </header>
+
+    <section href="#about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            
+			<h1 class="text1" >Temperature Conversion</h1>
+			<div class="outer">
+		
+			
+			
+			
+<div class="btn-group">
+  <button style="border-color: black;" id="btn1" type="button" class="inner btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Select Unit
+  </button>
+  <div class="dropdown-menu">
+    <div id="celcius1" class="dropdown-item" >&degCelcius</div>
+    <div id="Fahrenheit1" class="dropdown-item">&degFahrenheit</div>
+    <div style="text-indent: 5px;" id="kelvin1" class="dropdown-item">Kelvin</div>
+    <div id="rankine1" class="dropdown-item">&degRankine</div>
+  </div>
+</div>
+	 
+	
+
+	
+	
+	
+	
+    <p class="inner">
+      <input class="text-center form-control" placeholder="Insert Temperature" type="text" id="temperature" />
+	  
+	  <!-- Example split danger button -->
+<div class="btn-group">
+  <button style="border-color: black;" id="convert" type="button" class="btn btn-success">Convert to: </button>
+  <button style="border-color: black;" type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    <div id="celcius2" class="dropdown-item">&degCelcius</div>
+    <div id="Fahrenheit2" class="dropdown-item">&degFahrenheit</div>
+    <div style="text-indent: 5px;" id="kelvin2" class="dropdown-item"> Kelvin</div>
+    <div id="rankine2" class="dropdown-item">&degRankine</div>
+  </div>
+</div>
+	  
+	  
+      
+    </p>
+    <input class="form-control" id="result" disabled=""></input>
+	
+	</div>
+			
+			
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section href="#services" id="services" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+       
+	   <h1 class="text1">Pressure Conversion</h1>
+	
+	<!-- Example single danger button -->
+	<div class="outer">
+<div class="btn-group">
+  <button style="border-color: black;" id="btn2" type="button" class="inner btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Select Unit
+  </button>
+  <div class="dropdown-menu">
+    <div id="Atmosphere1" class="dropdown-item">Atmosphere</div>
+    <div id="Bar1" class="dropdown-item" >Bar</div>
+    <div id="Pascal1" class="dropdown-item" >Pascal</div>
+    <div id="Torr1" class="dropdown-item" >Torr</div>
+  </div>
+</div>
+	
+
+	
+    <p class="inner">
+      <input class="text-center form-control" placeholder="Insert Pressure" type="text" id="Preasure" />
+	  
+	  <!-- Example split danger button -->
+<div class="btn-group">
+  <button style="border-color: black;" id="convert2" type="button" class="btn btn-success">Convert to: </button>
+  <button style="border-color: black;" type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    <div id="Atmosphere2" class="dropdown-item" >Atmosphere</div>
+    <div id="Bar2" class="dropdown-item" >Bar</div>
+    <div id="Pascal2" class="dropdown-item" > Pascal</div>
+    <div id="Torr2" class="dropdown-item" >Torr</div>
+  </div>
+</div>
+	  
+	  
+      
+    </p>
+    <input class="form-control" id="result2" disabled=""></input>
+	
+	</div>
+	   
+	   
+          </div>
+        </div>
+      </div>
+    </section>
+	
+    <section  id="contact">
+      <div  class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            
+		<h1 class="text1">Lussac's Gass law</h1>	
+		<h2 class="text2">Leave the variable you wish to solve for blank<h2>
+		<div class="form-row">
+    <div class="col">
+      <input type="text" class="text-center form-control" placeholder="Insert Pressure (P1)" id="inputP1" >
+	        <input type="text" class="text-center form-control" placeholder="Insert Temperature (T1)" id="inputT1">
+    </div>
+    <div class="col">
+      <input type="text" class="text-center form-control" placeholder="Insert Pressure (P2)" id="inputP2">
+	        <input type="text" class="text-center form-control" placeholder="Insert Temperature (T2)" id="inputT2">
+    </div>
+  </div>
+  <button id="convert3" type="button" class="btn btn-primary btn-lg btn-block">CALCULATE</button>
+  <input id="result3" disabled=""></input>
+          </div>
+        </div>
+      </div>
+    </section>
+
+	
+	
+	
+	
+    <!-- Footer -->
+    <footer style="height: 150px;" class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Roberto Ferraresi 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+	<script src="js/temperature.js"></script>
+
+  </body>
+
+</html>
